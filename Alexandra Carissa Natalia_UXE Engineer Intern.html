@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+
+<title>Alexandra Carissa Natalia_UXE Intern</title> 
+<style> 
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background: #f2f2f2;
+	}
+    .navbar {
+        background-color: #006fb9;
+        display: flex;
+        justify-content: left;
+        padding: 15px;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 16px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+	.container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 16px;
+        }
+
+        .item1 {
+            height: 300px;
+			width: 607px;
+            background-color: #dbfb13;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+		.item2 {
+            height: 300px;
+			width: 607px;
+            background-color: #2bf2fe;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+		.item1, .item2{
+			align: inline;
+		}
+		.item3 {
+            height: 300px;
+			width: 1300px;
+            background-color: #f474ff;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+		.item4 {
+            height: 300px;
+			width: 1300px;
+            background-color: #ff8a8a;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+	
+h3{
+	text-align: left;
+	font-size: 18px;
+	margin: 10px 5px 0px 5px;
+	padding-top: 0px;
+	 width: 100%;
+           overflow: hidden;
+          -webkit-box-orient: vertical;
+         -webkit-line-clamp: 2;
+         display: -webkit-box;
+}
+h4{
+	text-align: left;
+	font-size: 18px;
+	color: #FF6600;
+	margin: 0px 5px 0px 5px;
+	padding-top: 2px;
+}
+h5{
+	text-align: left;
+	font-size: 15px;
+	color: #8c8c8c;
+	margin: 2px 0px 0px 5px;
+	padding-top: 0px;
+}
+h6{
+	text-align: left;
+	font-size: 14px;
+	color: #ff0000;
+	background-color: #FFB6C1;
+	border-radius: 12px;
+	margin: 1px 0px 0px 1px;
+	padding: 1px 4px;
+}
+h5, h6{
+	float: left;
+}
+a{
+	text-decoration: none;
+}
+.gallery{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+	overflow-x: scroll;
+}
+.card{
+	width: 20%;
+	max-width: 182px;
+	margin: 15px;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+	padding-top: 0px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: .4s;
+	background: #ffffff;
+
+}
+.card:hover{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transform: translate(0px,-8px);
+}
+img{
+	max-width: 182px;
+	max-height: 182px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	border-radius: 20px 20px 0px 0px;
+}
+button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #006fb9;
+  border-radius: 8px;
+  padding: 12px 44px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: .5s;
+  justify-content: center;
+}
+button:hover{
+	transform: scale(0.95);
+}
+@media(max-width:420px){
+	.gallery{
+		width: 420px;
+	}
+	.card{
+		width: 132px;
+		}
+	img{
+		width: 132px;
+		height: 132px;
+	}
+	button{
+		padding: 8px 20px;
+	}
+	h3, h4, h5, h6{
+		scale: 0.8;
+		margin: 0px 2px 0px 2px;
+	}
+	h5,h6{
+		float:left;
+	}
+}
+@media(min-width:420px){
+	.card{
+		width: 182px;
+		}
+}
+.bottombar {
+        background-color: #8c8c8c;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .bottombar a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 8px 16px;
+		margin-top: 15px;
+		scale: 1.5;
+    }
+.buttons{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0 50px 0;
+}
+   
+</style>
+</head>
+<body>
+<div id='scroll-top'></div>
+<div class="navbar">
+<a href="#home">Blibli Logo</a>
+</div>
+
+<div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+    </div>
+<div class="gallery" id='container'>
+	
+	
+		<div class="card">
+			<img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCc0vIMssu1ZHkL8cR3bv6-uJjL0SWDBKas19FT-MbMubhefQv0PwzE8GOfK6A6VcyzaXFHz344arXydU_lpGhSalI9=s1600">
+			<h3>NIKE AJ1 retro High White University Blue</h3>
+			<h4>Rp3.550.000</h4>
+			<h5>Rp1.000.000</h5>
+			<h6>99%</h6>
+			<button class="buy">Add to bag</button>
+		</div>
+		<div class="card">
+			<img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCc0vIMssu1ZHkL8cR3bv6-uJjL0SWDBKas19FT-MbMubhefQv0PwzE8GOfK6A6VcyzaXFHz344arXydU_lpGhSalI9=s1600">
+			<h3>NIKE AJ1 retro High White University Blue</h3>
+			<h4>Rp3.550.000</h4>
+			<h5>Rp1.000.000</h5>
+			<h6>99%</h6>
+			<button class="buy">Add to bag</button>
+		</div>
+		<div class="card">
+			<img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCc0vIMssu1ZHkL8cR3bv6-uJjL0SWDBKas19FT-MbMubhefQv0PwzE8GOfK6A6VcyzaXFHz344arXydU_lpGhSalI9=s1600">
+			<h3>NIKE AJ1 retro High White University Blue</h3>
+			<h4>Rp3.550.000</h4>
+			<h5>Rp1.000.000</h5>
+			<h6>99%</h6>
+			<button class="buy">Add to bag</button>
+		</div>
+		<div class="card">
+			<img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCc0vIMssu1ZHkL8cR3bv6-uJjL0SWDBKas19FT-MbMubhefQv0PwzE8GOfK6A6VcyzaXFHz344arXydU_lpGhSalI9=s1600">
+			<h3>NIKE AJ1 retro High White University Blue</h3>
+			<h4>Rp3.550.000</h4>
+			<h5>Rp1.000.000</h5>
+			<h6>99%</h6>
+			<button class="buy">Add to bag</button>
+		</div>
+		<div class="card">
+			<img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCc0vIMssu1ZHkL8cR3bv6-uJjL0SWDBKas19FT-MbMubhefQv0PwzE8GOfK6A6VcyzaXFHz344arXydU_lpGhSalI9=s1600">
+			<h3>NIKE AJ1 retro High White University Blue</h3>
+			<h4>Rp3.550.000</h4>
+			<h5>Rp1.000.000</h5>
+			<h6>99%</h6>
+			<button class="buy">Add to bag</button>
+		</div>
+				<div class="card">
+			<img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCc0vIMssu1ZHkL8cR3bv6-uJjL0SWDBKas19FT-MbMubhefQv0PwzE8GOfK6A6VcyzaXFHz344arXydU_lpGhSalI9=s1600">
+			<h3>NIKE AJ1 retro High White University Blue</h3>
+			<h4>Rp3.550.000</h4>
+			<h5>Rp1.000.000</h5>
+			<h6>99%</h6>
+			<button class="buy">Add to bag</button>
+		</div>
+				<div class="card">
+			<img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCc0vIMssu1ZHkL8cR3bv6-uJjL0SWDBKas19FT-MbMubhefQv0PwzE8GOfK6A6VcyzaXFHz344arXydU_lpGhSalI9=s1600">
+			<h3>NIKE AJ1 retro High White University Blue</h3>
+			<h4>Rp3.550.000</h4>
+			<h5>Rp1.000.000</h5>
+			<h6>99%</h6>
+			<button class="buy">Add to bag</button>
+		</div>
+	</div>
+	
+	<div class='buttons'>
+	<button id="slideLeft" type="button">Slide left</button>
+    <button id="slideRight" type="button" style='margin-left: 10px'>Slide right</button>
+	</div>
+	
+	<script>
+    const buttonRight = document.getElementById('slideRight');
+    const buttonLeft = document.getElementById('slideLeft');
+
+    buttonRight.onclick = function () {
+      document.getElementById('container').scrollLeft += 30;
+    };
+    buttonLeft.onclick = function () {
+      document.getElementById('container').scrollLeft -= 30;
+    };
+	</script>
+
+</body>
+	
+	<footer class="bottombar"> 
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel pellentesque ligula. Sed sit amet felis vel turpis vestibulum ultrices. Integer vulputate aliquet est, in condimentum libero lobortis vel. </p>
+    <a class="bottombar" href="#scroll-top"><span class="w3-xlarge"> 
+    <i class="fa fa-chevron-circle-up"></i></span></a> 
+	</footer> 
+</html>
